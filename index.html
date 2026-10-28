@@ -6,6 +6,26 @@
     Free for personal and commercial use under the CCA 3.0 license
 -->
 <html>
+
+<style>
+  /* Keep the two Futon dashboards side by side */
+  @media screen and (min-width: 737px) {
+    #main > .posts > article.futon-sales,
+    #main > .posts > article.futon-operations {
+      width: 50%;
+    }
+
+    #main > .posts > article.futon-sales {
+      border-left-width: 0;
+      clear: left;
+    }
+
+    #main > .posts > article.futon-operations {
+      clear: none;
+    }
+  }
+</style>
+
 <head>
     <title>SQL Projects | Matthew Alvarado</title>
     <meta charset="utf-8" />
@@ -423,7 +443,7 @@
 </article>
 
 <!-- Futon Manufacturing Sales Performance Dashboard -->
-<article>
+<article class="futon-sales">
   <header>
     <h2>
       <a
@@ -478,6 +498,75 @@
     <li>
       <a
         href="https://github.com/Heyitsmatt12/Futon-Manufacturing-Analytics"
+        class="button"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        View SQL Code
+      </a>
+    </li>
+  </ul>
+</article>
+
+<!-- Futon Manufacturing Operations & Quality Dashboard -->
+<article class="futon-operations">
+  <header>
+    <h2>
+      <a
+        href="https://public.tableau.com/views/FutonManufacturing-OperationsQualityDashboard/Dashboard1"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Futon Manufacturing<br />
+        Operations &amp; Quality Dashboard
+      </a>
+    </h2>
+  </header>
+
+  <a
+    href="https://public.tableau.com/views/FutonManufacturing-OperationsQualityDashboard/Dashboard1"
+    class="image fit"
+    target="_blank"
+    rel="noopener noreferrer"
+    style="max-width: 350px; margin: 0 auto 2rem auto;"
+  >
+    <img
+      src="images/DA9.jpg"
+      alt="Futon Manufacturing Operations and Quality Dashboard"
+      style="width: 100%; height: auto;"
+    />
+  </a>
+
+  <p>
+    Built an interactive Tableau dashboard using production
+    and quality inspection data from a sample furniture
+    manufacturing database. I used SQL Server to create
+    views combining production orders, product information,
+    and quality inspection records. I also wrote SQL queries
+    to validate production totals and quality metrics.
+
+    The dashboard tracks production completion rates,
+    units produced, scrap quantities, and quality acceptance
+    rates. It also includes monthly production trends,
+    product-level comparisons, and interactive filters
+    for production status and date range.
+  </p>
+
+  <ul class="actions special">
+    <li>
+      <a
+        href="https://public.tableau.com/views/FutonManufacturing-OperationsQualityDashboard/Dashboard1"
+        class="button"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        View Tableau Dashboard
+      </a>
+    </li>
+
+    <li>
+      <a
+        href="https://github.com/Heyitsmatt12/Futon-Manufacturing-Operations-Analytics"
         class="button"
         target="_blank"
         rel="noopener noreferrer"
@@ -563,3 +652,4 @@
 
   </body>
 </html>
+<
